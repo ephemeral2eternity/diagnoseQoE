@@ -1,0 +1,11 @@
+kernel.all.cpu.sys
+kernel.all.load[1]
+network.tcpconn.established
+network.tcp.retranssegs
+network.interface.out.bytes[eth0]
+network.interface.in.bytes[eth0]
+mem.util.used
+mem.util.free
+mem.util.cached
+disk.dev.read[sda]
+disk.dev.write[sda]
