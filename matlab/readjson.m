@@ -17,6 +17,8 @@ for i=1:length(nums)
     end
     dataAll=eval(sprintf('QoE.%s', strs));
     responseTime(i)=dataAll.Response;
-    QoE1(i)=dataAll.QoE1;
-    QoE2(i)=dataAll.QoE2;
+    TS(i,:)=dataAll.TS;
+    QoE1(i,:)=dataAll.QoE1;
+    QoE2(i,:)=dataAll.QoE2;
+    save('QoE', 'responseTime', 'TS', 'QoE1','QoE2');
 end
