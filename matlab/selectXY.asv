@@ -5,6 +5,9 @@ clc;
 load('metrics');
 load('QoE');
 TS=TS-mod(TS,1);
-[value,index]=intersect(metricsTime,TS);
-X=metrics(index);
-Y=
+[value,xindex]=intersect(metricsTime,TS);
+X=metrics(xindex,:);
+[Y,index]=intersect(TS, value);
+
+t=1000;
+B=LassoActiveSet(X,Y,t);
