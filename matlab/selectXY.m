@@ -10,7 +10,7 @@ X=metrics(xindex,:);
 [yvalue, yindex]=intersect(TS, value);
 Y=responseTime(yindex)';
 
-t=100;
+t=24;
 B=LassoActiveSet(X,Y,t);
 
 figure;
