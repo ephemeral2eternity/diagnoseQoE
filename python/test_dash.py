@@ -57,6 +57,8 @@ for i in range(num_runs):
 	## Testing rtt based server selection
 	selected_srv_addr = cdn_host + '/videos/'
 	CDN_SQS, uniq_srvs = dash_client(selected_srv_addr, video_name, client_ID, out_csv_writer)
+	if os.path.exists(os.getcwd() + "/tmp/"):
+		shutil.rmtree(os.getcwd() + "/tmp/")
 
 ## Close tracefile
 out_csv_trace.close()
