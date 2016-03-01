@@ -6,6 +6,7 @@ import json
 import shutil
 import os
 import logging
+import csv
 from dash.utils import *
 from qoe.dash_chunk_qoe import *
 from dash.fault_tolerance import *
@@ -16,7 +17,7 @@ from client_utils import *
 # @input : srv_addr ---- the server name address 
 #		   video_name --- the string name of the requested video
 ## ==================================================================================================
-def dash_client(srv_addr, video_name, method=None):
+def dash_client(srv_addr, video_name, client_ID, traceWriter):
 	## Define all parameters used in this client
 	alpha = 0.5
 	retry_num = 10
@@ -24,15 +25,6 @@ def dash_client(srv_addr, video_name, method=None):
 	## CDN SQS
 	CDN_SQS = 5.0
 	uniq_srvs = []
-
-	## ==================================================================================================
-	## Client name and info
-	client = getMyName()
-	cur_ts = time.strftime("%m%d%H%M")
-	if method is not None:
-		client_ID = client + "_" + cur_ts + "_" + method
-	else:
-		client_ID = client + "_" + cur_ts
 
 	## ==================================================================================================
 	## Parse the mpd file for the streaming video
@@ -109,9 +101,6 @@ def dash_client(srv_addr, video_name, method=None):
 		(vchunk_sz, chunk_srv_ip, error_codes) = ft_download_chunk(srv_addr, retry_num, video_name, vidChunk)
 		http_errors.update(error_codes)
 		if vchunk_sz == 0:
-			## Write out traces after finishing the streaming
-			writeTrace(client_ID, client_tr)
-			writeHTTPError(client_ID, http_errors)
 			return
 
 		curTS = time.time()
@@ -141,8 +130,9 @@ def dash_client(srv_addr, video_name, method=None):
 		print "|---", str(curTS), "---|---", str(chunkNext), "---|---", nextRep, "---|---", str(chunk_linear_QoE), "---|---", \
 			str(chunk_cascading_QoE), "---|---", str(curBuffer), "---|---", str(freezingTime), "---|---", chunk_srv_ip, "---|---", str(rsp_time), "---|"
 
-		client_tr[chunkNext] = dict(TS=curTS, Representation=nextRep, QoE1=chunk_linear_QoE, QoE2=chunk_cascading_QoE, Buffer=curBuffer, \
-									Freezing=freezingTime, Server=chunk_srv_ip, Response=rsp_time)
+		cur_tr = dict(TS=curTS, Representation=nextRep, QoE1=chunk_linear_QoE, QoE2=chunk_cascading_QoE, Buffer=curBuffer, \
+					  Freezing=freezingTime, Server=chunk_srv_ip, Response=rsp_time, ChunkID=chunkNext)
+		traceWriter.writerow(cur_tr)
 
 		if chunk_srv_ip not in uniq_srvs:
 			uniq_srvs.append(chunk_srv_ip)
@@ -157,6 +147,4 @@ def dash_client(srv_addr, video_name, method=None):
 		chunkNext += 1
 
 	## Write out traces after finishing the streaming
-	writeTrace(client_ID, client_tr)
-	writeTrace(client_ID + "_httperr", http_errors)
-	return client_ID, CDN_SQS, uniq_srvs
+	return CDN_SQS, uniq_srvs

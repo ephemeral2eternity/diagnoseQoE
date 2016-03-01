@@ -8,6 +8,7 @@ import os
 import logging
 import shutil
 import time
+import csv
 from datetime import datetime
 from dash_client import *
 from monitor.ping import *
@@ -26,28 +27,36 @@ print "Server to download the video:", cdn_host
 if len(sys.argv) > 2:
 	num_runs = int(sys.argv[2])
 else:
-	num_runs = 1
+	num_runs = 2
 
 print "Number of runs:", str(num_runs)
 
+## ==================================================================================================
+## Client name and info
+client = getMyName()
+cur_ts = time.strftime("%m%d%H%M")
+client_ID = client + "_" + cur_ts
+
+trace_fields = ["TS", "Buffer", "Freezing", "QoE1", "QoE2", "Representation", "Response", "Server", "ChunkID"]
+csv_trace_folder = os.getcwd() + "/dataQoE/"
+
+try:
+	os.stat(csv_trace_folder)
+except:
+	os.mkdir(csv_trace_folder)
+
+csv_trace_file = client_ID + ".csv"
+out_csv_trace = open(csv_trace_folder + csv_trace_file, 'wb')
+out_csv_writer = csv.DictWriter(out_csv_trace, fieldnames=trace_fields)
+out_csv_writer.writeheader()
+
+## ==================================================================================================
 ### Get the server to start streaming
 for i in range(num_runs):
 
 	## Testing rtt based server selection
 	selected_srv_addr = cdn_host + '/videos/'
-	client_ID, CDN_SQS, uniq_srvs = dash_client(selected_srv_addr, video_name)
+	CDN_SQS, uniq_srvs = dash_client(selected_srv_addr, video_name, client_ID, out_csv_writer)
 
-	all_srv_trace_data = {}
-	for srv in uniq_srvs:
-		## ping all servers
-		mnRTT = getMnRTT(srv)
-		print mnRTT
-
-		## Traceroute all srvs
-		cdnHops = get_hop_by_host(srv)
-		print cdnHops
-
-		traceData = {'RTT' : mnRTT, 'Hops' : cdnHops, 'TS' : time.time()}
-		all_srv_trace_data[srv] = traceData.copy()
-
-	writeJson("TR_" + client_ID, all_srv_trace_data)
+## Close tracefile
+out_csv_trace.close()
