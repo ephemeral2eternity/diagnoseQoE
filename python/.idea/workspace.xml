@@ -58,8 +58,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/struct2jdata.m" afterPath="$PROJECT_DIR$/../matlab/struct2jdata.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/varargin2struct.m" afterPath="$PROJECT_DIR$/../matlab/varargin2struct.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_dash.py" afterPath="$PROJECT_DIR$/test_dash.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/extract_info.sh" afterPath="$PROJECT_DIR$/../shell/extract_info.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/metrics.csv" afterPath="$PROJECT_DIR$/../shell/metrics.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/metrics.sh" afterPath="$PROJECT_DIR$/../shell/metrics.sh" />
@@ -443,8 +441,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
