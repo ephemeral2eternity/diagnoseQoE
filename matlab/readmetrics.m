@@ -2,7 +2,7 @@ clear all;
 close all;
 clc;
 
-files=char('all47');
+files=char('all02');
 num=size(files, 1);
 for i=1:num
     name=files(i,:);

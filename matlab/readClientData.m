@@ -3,7 +3,7 @@ close all;
 clc;
 format long;
 
-files=char('client-09_03012047');
+files=char('client-09_03012202');
 num=size(files, 1);
 for i=1:num
     name=files(i,:);
@@ -12,5 +12,5 @@ for i=1:num
     TS=dataAll(:,1);
     QoE1=dataAll(:,4);
     QoE2=dataAll(:,5);
-    save('QoE2047', 'responseTime', 'TS', 'QoE1','QoE2');
+    save('QoE2202', 'responseTime', 'TS', 'QoE1','QoE2');
 end
