@@ -9,17 +9,17 @@ TS=TS-mod(TS,1);
 X=metrics(xindex,:);
 [yvalue, yindex]=intersect(TS, value);
 Y=responseTime(yindex);
+N=length(Y);
 
 trainTimes=10:10:200;
 for i=1:length(trainTimes)
-    t=trainTimes(i);
-    trainX=X(1:t,:);
-    trainY=Y(1:t);
-    tic;
-    B=LassoActiveSet(trainX,trainY,t);
-    tt(i)=toc;
-    trainEABS(i)=mean(trainX*B-trainY);
-    trainEREL(i)=mean((trainX*B-trainY)./trainY);
+    wint=trainTimes(i);
+    for t=1:N-wint
+        trainX=X(t:t+wint-1,:);
+        trainY=Y(t:t+wint-1);
+        tic;
+        B=LassoActiveSet(trainX,trainY,10);
+        tt(t)=toc;
 %     figure;
 %     subplot(2,1,1);
 %     plot(trainY-trainX*B, 'r-');
@@ -35,12 +35,18 @@ for i=1:length(trainTimes)
 %     xlabel('time');
     % figfile=sprintf('compare');
     % print(figfile,'-dpng','-r800');
-    tic
-    testY=Y(t+1:end);
-    testX=X(t+1:end,:);
+        tic;
+        testY=Y(t+wint);
+        testX=X(t+wint,:);
+        testE(t)=testY-testX*B;
+        pt(t)=toc;
+    end
+    traint(i)=mean(tt);
+    testt(i)=mean(pt);
+    trainEABS(i)=mean(trainX*B-trainY);
+    trainEREL(i)=mean((trainX*B-trainY)./trainY);
     testEABS(i)=mean(testY-testX*B);
-    testEREL(i)=mean((testX*B-testY)./testY);
-    pt(i)=toc/(length(Y)-t);
+    testEREL(i)=mean((testX*B-testY)/testY);
 end
 
 figure;
@@ -50,7 +56,7 @@ set(gca, 'FontName', 'Times New Roman', 'FontSize', 18);
 legend('training', 'testing');
 ylabel('Absolute Error');
 xlabel('Training Time (s)');
-figfile=sprintf('absolute_error');
+figfile=sprintf('absolute_error_window');
 print(figfile,'-dpng','-r800');
 
 figure;
@@ -60,17 +66,17 @@ set(gca, 'FontName', 'Times New Roman', 'FontSize', 18);
 legend('training', 'testing');
 ylabel('Relative Error');
 xlabel('Training Time (s)');
-figfile=sprintf('absolute_error');
+figfile=sprintf('absolute_error_window');
 print(figfile,'-dpng','-r800');
 
 figure;
-plot(trainTimes, tt, 'g*-'); hold on;
-plot(trainTimes, pt, 'ro-');
+plot(trainTimes, traint, 'g*-'); hold on;
+plot(trainTimes, testt, 'ro-');
 set(gca, 'FontName', 'Times New Roman', 'FontSize', 18);
 legend('training', 'testing');
 ylabel('Computation Time (s)');
 xlabel('Training Time (s)');
-figfile=sprintf('computation_time');
+figfile=sprintf('computation_time_window');
 print(figfile,'-dpng','-r800');
 
 %     figure;

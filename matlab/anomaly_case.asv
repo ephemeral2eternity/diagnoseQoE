@@ -9,57 +9,89 @@ TS=TS-mod(TS,1);
 X=metrics(xindex,:);
 [yvalue, yindex]=intersect(TS, value);
 Y=responseTime(yindex);
+N=length(Y);
 
 figure;
 plot(responseTime);
+set(gca, 'FontName', 'Times New Roman', 'FontSize', 18);
+ylabel('Response Time (s)');
+xlabel('Time (s)');
+% figfile=sprintf('rt_withanomaly');
+% print(figfile,'-dpng','-r800');
 
-trainTimes=70;
+
+trainTimes=20;
 for i=1:length(trainTimes)
-    t=trainTimes(i);
-    trainX=X(1:t,:);
-    trainY=Y(1:t);
-    tic;
-    B=LassoActiveSet(trainX,trainY,t);
-    tt(i)=toc;
-    trainEABS(i)=mean(trainX*B-trainY);
-    trainEREL(i)=mean((trainX*B-trainY)./trainY);
+    wint=trainTimes(i);
+    for t=wint+1:N
+        trainX=X(t-wint:t-1,:);
+        trainY=Y(t-wint:t-1);
+        tic;
+        B=LassoActiveSet(trainX,trainY,0.01);
+        tt(t)=toc;
+        
+        tic;
+        testY=Y(t);
+        testX=X(t,:);
+        pt(t)=toc;
+        
+        real(t)=testY;
+        estimate(t)=max(testX*B,0);
+        trainEABS(t)=mean(abs(trainX*B-trainY));
+        trainEREL(t)=mean(abs((trainX*B-trainY))./trainY);
+        testEABS(t)=mean(testY-testX*B);
+        testEREL(t)=mean((testX*B-testY)./testY);
+    end
     figure;
     subplot(2,1,1);
-    plot(trainY-trainX*B, 'r-');
-    ylabel('training error');
+    plot(trainEABS, 'g-'); hold on;
+    plot(testEABS, 'r-');
+    ylim([-1 1]);
+    ylabel('Absolute Error');
     xlabel('time');
     % figfile=sprintf('trainerror');
     % print(figfile,'-dpng','-r800');
     subplot(2,1,2);
-    plot(trainY, 'g*-');hold on;
-    plot(trainX*B, 'bo-');
-    legend('real', 'estimated');
-    ylabel('response time');
+    plot(trainEREL*100, 'g-');hold on;
+    plot(testEREL*100, 'r-');
+    ylim([-100 100]);
+    legend('train', 'test');
+    ylabel('Relative Error (%)');
     xlabel('time');
-    figfile=sprintf('training_withanomaly');
-    print(figfile,'-dpng','-r800');
-    tic
-    testY=Y(t+1:end);
-    testX=X(t+1:end,:);
-    testEABS(i)=mean(testY-testX*B);
-    testEREL(i)=mean((testX*B-testY)./testY);
-    pt(i)=toc/(length(Y)-t);
+%     figfile=sprintf('error_anomaly_window');
+%     print(figfile,'-dpng','-r800');
     
     figure;
-    subplot(2,1,1);
-    plot(testY-testX*B, 'r-');
-    ylabel('testing error');
+    plot(real, 'g-'); hold on;
+    plot(estimate, 'r-');
+    ylim([0 2]);
+    legend('real', 'estimate');
+    ylabel('Response Time');
     xlabel('time');
-    % figfile=sprintf('trainerror');
-    % print(figfile,'-dpng','-r800');
-    subplot(2,1,2);
-    plot(testY, 'g*-');hold on;
-    plot(testX*B, 'bo-');
-    legend('real', 'estimated');
-    ylabel('response time');
-    xlabel('time');
-    figfile=sprintf('testing_withanomaly');
-    print(figfile,'-dpng','-r800');
+%     figfile=sprintf('error_anomaly_window');
+%     print(figfile,'-dpng','-r800');
+%     tic
+%     testY=Y(t+1:end);
+%     testX=X(t+1:end,:);
+%     testEABS(i)=mean(testY-testX*B);
+%     testEREL(i)=mean((testX*B-testY)./testY);
+%     pt(i)=toc/(length(Y)-t);
+    
+%     figure;
+%     subplot(2,1,1);
+%     plot(testY-testX*B, 'r-');
+%     ylabel('testing error');
+%     xlabel('time');
+%     % figfile=sprintf('trainerror');
+%     % print(figfile,'-dpng','-r800');
+%     subplot(2,1,2);
+%     plot(testY, 'g*-');hold on;
+%     plot(testX*B, 'bo-');
+%     legend('real', 'estimated');
+%     ylabel('response time');
+%     xlabel('time');
+%     figfile=sprintf('testing_window');
+%     print(figfile,'-dpng','-r800');
 end
 return;
 figure;
