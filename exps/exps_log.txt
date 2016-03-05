@@ -1,9 +1,17 @@
-## Experiment Schedule
+## Experiment Schedule (Single Client Schedule: client-09_03012202.csv)
 15 22 1 3 * stress --cpu 8 --timeout 300s
 30 22 1 3 * stress --io 8 --timeout 300s
 45 22 1 3 * stress --vm 4 --vm-bytes 256M --timeout 300s
 00 23 1 3 * ~/limitOutbound.sh 300 500
 
-## Client Data
+# Client Data (Single Client Schedule)
 client-09_03012047.csv : no anomalies injected
-client-09_03-12202.csv : four types of anomalies injected as above schedule shown
+client-09_03012202.csv : four types of anomalies injected as above schedule shown
+
+## Experiment Schedule (10 Clients experiment)
+15 07 4 3 * stress --cpu 16 --timeout 300s
+30 07 4 3 * stress --io 8 --timeout 300s
+45 07 4 3 * stress --vm 4 --vm-bytes 256M --timeout 300s
+00 07 4 3 * ~/limitOutbound.sh 300 1000
+
+## Experiment Schedule (20 Clients experiment)
