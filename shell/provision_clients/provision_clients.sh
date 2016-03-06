@@ -2,9 +2,6 @@
 client_file=$1
 image="dashclient"
 
-declare -a servers
-
-index=0
 while IFS=, read server zone account project; do
 	echo "#########################################################################################################"
 	echo "Set the account and the project as: $account , $project !"
