@@ -1,0 +1,41 @@
+clc;
+
+load result;
+responseTime=responseTime(yindex);
+RTS=TS(yindex);
+QoE2=QoE2(yindex);
+RTS=RTS-RTS(1)+1;
+figure;
+plot(RTS, responseTime);
+
+figure;
+plot(RTS, QoE2);
+
+%% group 1 experiments
+T1=1200;
+ind0=1;
+for i=1:4
+    ind1=min(find(RTS-ind0+1>=T1));
+    figure;
+    subplot(2,1,1);
+    plot(RTS(ind0:ind1), QoE2(ind0:ind1));
+    subplot(2,1,2);
+    plot(RTS(ind0:ind1), responseTime(ind0:ind1));
+    ind0=min(find(RTS>=900));
+end
+
+%% group 2 plot
+T2=1800;
+ind0=min(find(RTS>=4201));
+for i=1:4
+    ind1=min(find(RTS-4201+1>=T2));
+    figure;
+    subplot(2,1,1);
+    plot(RTS(ind0:ind1), QoE2(ind0:ind1));
+    subplot(2,1,2);
+    plot(RTS(ind0:ind1), responseTime(ind0:ind1));
+    ind0=min(find(RTS-4201-i*1800+1>T2));
+end
+
+%ylim([0 10]);
+%xlim([350 450]);
