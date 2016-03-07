@@ -1,9 +1,25 @@
 #!/bin/bash
-vm_zone="europe-west1-b"
-image="dashclient"
+#!/bin/bash
+info_file=$1
+index=0
 
-for i in {1..10};
-do
-	vmname="client$i"
-	echo "Provision VM $vmname in zone $vm_zone using image $image !"
-done
+## Read accounts and their corresponding projects
+declare -a vms zones accounts projects
+while IFS=, read vm zone account project; do
+	vms[$index]=$vm
+	zones[$index]=$zone
+	accounts[$index]=$account
+	projects[$index]=$project
+	echo " Stopping $index instance: $vm $zone $account $project "
+	echo " Configure the account and the project as: $account , $project "
+	gcloud config set account $account
+	gcloud config set project $project
+	gcloud config set compute/zone $zone
+	gcloud compute instances start $vm
+	index=$(($index+1))
+done < $info_file
+
+echo " All started vms ${vms[@]} "
+echo " All zones: ${zones[@]} "
+echo " All accounts: ${accounts[@]} "
+echo " All projects: ${projects[@]} "
