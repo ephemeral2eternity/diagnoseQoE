@@ -41,3 +41,17 @@ client-09_03012202.csv : four types of anomalies injected as above schedule show
 45 11 6 3 * ~/limitOutbound.sh 900 1000
 
 ## Anomaly issue testing (Test different stress level)
+05 02 7 3 * stress --cpu 32 --timeout 300s
+20 02 7 3 * stress --cpu 64 --timeout 300s
+35 02 7 3 * stress --cpu 128 --timeout 300s
+50 02 7 3 * stress --io 300 --timeout 300s
+05 03 7 3 * stress --io 500 --timeout 300s
+20 03 7 3 * stress --io 1000 --timeout 300s
+35 03 7 3 * stress --vm 5 --vm-bytes 256M --timeout 300s
+05 06 7 3 * ~/limitOutbound.sh 300 2000
+20 06 7 3 * ~/limitOutbound.sh 300 5000
+35 06 7 3 * ~/limitOutbound.sh 300 10000
+50 06 7 3 * ~/limitOutbound.sh 600 2000
+05 07 7 3 * ~/limitOutbound.sh 600 5000
+20 07 7 3 * ~/limitOutbound.sh 600 10000
+
