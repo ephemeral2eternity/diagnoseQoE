@@ -109,6 +109,7 @@ for i=1:length(trainTimes)
 %     print(figfile,'-dpng','-r800');
 end
 return;
+
 figure;
 plot(trainTimes, trainEABS, 'g*-'); hold on;
 plot(trainTimes, testEABS, 'ro-');
