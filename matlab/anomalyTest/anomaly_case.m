@@ -21,7 +21,6 @@ xlabel('Time (s)');
 figfile=sprintf('rt_withanomaly');
 print(figfile,'-dpng','-r800');
 
-
 trainTimes=60;
 for i=1:length(trainTimes)
     wint=trainTimes(i);
@@ -33,11 +32,12 @@ for i=1:length(trainTimes)
         tt(t)=toc;
         
         tic;
-        testY=Y(t);
         testX=X(t,:);
+        testY=Y(t);
         pt(t)=toc;
         
         real(t)=testY;
+        compon(t,:)=testX.*B';
         estimate(t)=max(testX*B,0);
         trainEABS(t)=mean(abs(trainX*B-trainY));
         trainEREL(t)=mean(abs((trainX*B-trainY))./trainY);
