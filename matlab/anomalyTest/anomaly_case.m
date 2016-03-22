@@ -22,14 +22,14 @@ figfile=sprintf('rt_withanomaly');
 print(figfile,'-dpng','-r800');
 
 
-trainTimes=20;
+trainTimes=60;
 for i=1:length(trainTimes)
     wint=trainTimes(i);
     for t=wint+1:N
         trainX=X(t-wint:t-1,:);
         trainY=Y(t-wint:t-1);
         tic;
-        B=LassoActiveSet(trainX,trainY,24);
+        B=LassoActiveSet(trainX,trainY,10);
         tt(t)=toc;
         
         tic;

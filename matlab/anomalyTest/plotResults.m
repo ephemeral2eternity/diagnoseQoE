@@ -14,7 +14,7 @@ plot(RTS, QoE2);
 set(gca, 'FontName', 'Times New Roman', 'FontSize', 18);
 
 %% group 1 experiments
-anomalies=char('CPU', 'CPU', 'CPU','Disk','Disk','Disk','Mem','Mem');
+anomalies=char('CPU1', 'CPU2', 'CPU3','Disk1','Disk2','Disk3','Mem1','Mem2');
 T1=900;
 startTime=1;
 ind0=min(find(RTS>=startTime));
@@ -32,6 +32,7 @@ for i=1:8
     set(gca, 'FontName', 'Times New Roman', 'FontSize', 18);
     ylabel('Response Time (s)');
     xlabel('Time (s)');
+    ylim([0 10]);
     title(sprintf('Response time under %s anomaly', anomalies(i,:)));
     figfile=sprintf('graphs/QoE2RT_%s', anomalies(i,:));
     print(figfile,'-dpng','-r800');
@@ -52,6 +53,7 @@ for i=1:8
     set(gca, 'FontName', 'Times New Roman', 'FontSize', 18);
     ylabel(' Estimated Response Time (s)');
     xlabel('Time (s)');
+    ylim([0 10]);
     title(sprintf('Estimated response time under %s anomaly', anomalies(i,:)));
     figfile=sprintf('graphs/QoE2EstimatedRT_%s', anomalies(i,:));
     print(figfile,'-dpng','-r800');
