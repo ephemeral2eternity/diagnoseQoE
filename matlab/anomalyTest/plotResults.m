@@ -39,6 +39,8 @@ for i=1:8
     ind0=ind1;
 end
 
+startTime=1;
+ind0=min(find(RTS>=startTime));
 for i=1:8
     ind1=min(find(RTS>=startTime+T1*i));
     figure;
