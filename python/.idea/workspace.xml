@@ -2,20 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d8ee477-ad67-4592-8c22-acf100c472a2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../matlab/anomaly_case.asv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/Regularization_Webinar/All_Subsets.m" afterPath="$PROJECT_DIR$/../matlab/Regularization_Webinar/All_Subsets.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/Regularization_Webinar/Elastic.m" afterPath="$PROJECT_DIR$/../matlab/Regularization_Webinar/Elastic.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/Regularization_Webinar/Lasso_example.m" afterPath="$PROJECT_DIR$/../matlab/Regularization_Webinar/Lasso_example.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/Regularization_Webinar/Sequential_Feature_Selection_Example.m" afterPath="$PROJECT_DIR$/../matlab/Regularization_Webinar/Sequential_Feature_Selection_Example.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exps/10clients/mergeCSV.asv" afterPath="$PROJECT_DIR$/../exps/10clients/mergeCSV.asv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exps/10clients/mergeCSV.m" afterPath="$PROJECT_DIR$/../exps/10clients/mergeCSV.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exps/exps_log.txt" afterPath="$PROJECT_DIR$/../exps/exps_log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/IEEEtran.bst" afterPath="$PROJECT_DIR$/../latex/IEEEtran.bst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/IEEEtran.cls" afterPath="$PROJECT_DIR$/../latex/IEEEtran.cls" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/Qomex2016_paper.aux" afterPath="$PROJECT_DIR$/../latex/Qomex2016_paper.aux" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/Qomex2016_paper.bbl" afterPath="$PROJECT_DIR$/../latex/Qomex2016_paper.bbl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/Qomex2016_paper.blg" afterPath="$PROJECT_DIR$/../latex/Qomex2016_paper.blg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/Qomex2016_paper.log" afterPath="$PROJECT_DIR$/../latex/Qomex2016_paper.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/Qomex2016_paper.ps" afterPath="$PROJECT_DIR$/../latex/Qomex2016_paper.ps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/Qomex2016_paper.tex" afterPath="$PROJECT_DIR$/../latex/Qomex2016_paper.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../latex/README.txt" afterPath="$PROJECT_DIR$/../latex/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/LassoActiveSet.m" afterPath="$PROJECT_DIR$/../matlab/10clients/LassoActiveSet.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/all10.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/all10.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/anomaly_case.asv" afterPath="$PROJECT_DIR$/../matlab/10clients/anomaly_case.asv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/anomaly_case.m" afterPath="$PROJECT_DIR$/../matlab/10clients/anomaly_case.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-02_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-02_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-03_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-03_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-04_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-04_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-05_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-05_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-06_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-06_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-07_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-07_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-08_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-08_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-09_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-09_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/client-10_03040700.csv" afterPath="$PROJECT_DIR$/../matlab/10clients/client-10_03040700.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/computeSlope.m" afterPath="$PROJECT_DIR$/../matlab/10clients/computeSlope.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/mergeCSV.m" afterPath="$PROJECT_DIR$/../matlab/10clients/mergeCSV.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/process_options.m" afterPath="$PROJECT_DIR$/../matlab/10clients/process_options.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/10clients/readmetrics.m" afterPath="$PROJECT_DIR$/../matlab/10clients/readmetrics.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/LassoActiveSet.m" afterPath="$PROJECT_DIR$/../matlab/20clients/LassoActiveSet.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/all20.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/all20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/anomaly_case.m" afterPath="$PROJECT_DIR$/../matlab/20clients/anomaly_case.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-01_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-01_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-02_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-02_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-03_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-03_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-04_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-04_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-05_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-05_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-06_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-06_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-07_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-07_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-08_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-08_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-09_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-09_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-10_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-10_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-11_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-11_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-12_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-12_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-13_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-13_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-14_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-14_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-15_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-15_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-16_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-16_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-17_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-17_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-18_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-18_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-19_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-19_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/client-20_03060100.csv" afterPath="$PROJECT_DIR$/../matlab/20clients/client-20_03060100.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/computeSlope.m" afterPath="$PROJECT_DIR$/../matlab/20clients/computeSlope.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/graph1.asv" afterPath="$PROJECT_DIR$/../matlab/20clients/graph1.asv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/graph1.m" afterPath="$PROJECT_DIR$/../matlab/20clients/graph1.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/mergeCSV.m" afterPath="$PROJECT_DIR$/../matlab/20clients/mergeCSV.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/process_options.m" afterPath="$PROJECT_DIR$/../matlab/20clients/process_options.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/20clients/readmetrics.m" afterPath="$PROJECT_DIR$/../matlab/20clients/readmetrics.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/LassoActiveSet.m" afterPath="$PROJECT_DIR$/../matlab/LassoActiveSet.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/Regularization_Webinar/license.txt" afterPath="$PROJECT_DIR$/../matlab/Regularization_Webinar/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/all02.csv" afterPath="$PROJECT_DIR$/../matlab/all02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/all47.csv" afterPath="$PROJECT_DIR$/../matlab/all47.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/anomaly_case.m" afterPath="$PROJECT_DIR$/../matlab/anomaly_case.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/client-09_02221401.json" afterPath="$PROJECT_DIR$/../matlab/client-09_02221401.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/computeSlope.m" afterPath="$PROJECT_DIR$/../matlab/computeSlope.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/jsonlab/AUTHORS.txt" afterPath="$PROJECT_DIR$/../matlab/jsonlab/AUTHORS.txt" />
@@ -47,21 +101,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/metrics.csv" afterPath="$PROJECT_DIR$/../matlab/metrics.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/parse_json.m" afterPath="$PROJECT_DIR$/../matlab/parse_json.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/process_options.m" afterPath="$PROJECT_DIR$/../matlab/process_options.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/readjson.asv" afterPath="$PROJECT_DIR$/../matlab/readjson.asv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/readClientData.m" afterPath="$PROJECT_DIR$/../matlab/readClientData.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/readjson.m" afterPath="$PROJECT_DIR$/../matlab/readjson.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/readmetrics.m" afterPath="$PROJECT_DIR$/../matlab/readmetrics.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/regression.m" afterPath="$PROJECT_DIR$/../matlab/regression.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/savejson.m" afterPath="$PROJECT_DIR$/../matlab/savejson.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/saveubjson.m" afterPath="$PROJECT_DIR$/../matlab/saveubjson.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/selectXY.asv" afterPath="$PROJECT_DIR$/../matlab/selectXY.asv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/selectXY.m" afterPath="$PROJECT_DIR$/../matlab/selectXY.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/struct2jdata.m" afterPath="$PROJECT_DIR$/../matlab/struct2jdata.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../matlab/varargin2struct.m" afterPath="$PROJECT_DIR$/../matlab/varargin2struct.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/extract_info.sh" afterPath="$PROJECT_DIR$/../shell/extract_info.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/metrics.csv" afterPath="$PROJECT_DIR$/../shell/metrics.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/metrics.sh" afterPath="$PROJECT_DIR$/../shell/metrics.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/results.csv" afterPath="$PROJECT_DIR$/../shell/results.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/accounts.csv" afterPath="$PROJECT_DIR$/../shell/provision_clients/accounts.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/client_info.csv" afterPath="$PROJECT_DIR$/../shell/provision_clients/client_info.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/client_ips.csv" afterPath="$PROJECT_DIR$/../shell/provision_clients/client_ips.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/list_clients.sh" afterPath="$PROJECT_DIR$/../shell/provision_clients/list_clients.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/multicopy.sh" afterPath="$PROJECT_DIR$/../shell/provision_clients/multicopy.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/multiquery.sh" afterPath="$PROJECT_DIR$/../shell/provision_clients/multiquery.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/provision_clients.sh" afterPath="$PROJECT_DIR$/../shell/provision_clients/provision_clients.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/senbof-pub.txt" afterPath="$PROJECT_DIR$/../shell/provision_clients/senbof-pub.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/start_clients.sh" afterPath="$PROJECT_DIR$/../shell/provision_clients/start_clients.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/provision_clients/stop_clients.sh" afterPath="$PROJECT_DIR$/../shell/provision_clients/stop_clients.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/rsts/metrics.csv" afterPath="$PROJECT_DIR$/../shell/rsts/metrics.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shell/rsts/results.csv" afterPath="$PROJECT_DIR$/../shell/rsts/results.csv" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,12 +148,12 @@
     <favorites_list name="python" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="test_dash.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_dash.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74814814">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.37317073">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding>
                 <element signature="e#127#140#0" expanded="true" />
               </folding>
@@ -101,7 +164,7 @@
       <file leaf-file-name="dash_client.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.269231">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -300,6 +363,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -441,28 +509,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -472,17 +548,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/cdn-urls.json">
+    <entry file="file://$PROJECT_DIR$/test_dash.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#127#140#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dash_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.269231">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="117" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cdn-urls.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -500,8 +603,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_dash.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74814814">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.37317073">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding>
             <element signature="e#127#140#0" expanded="true" />
           </folding>
